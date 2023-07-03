@@ -7,8 +7,16 @@ on:
 
 jobs:
   saludo_job:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Saludar
         run: |
           echo "Hola Github Actions!!!"
+
+      - name: Date
+        run: |
+          date
+
+      - name: Listar entorno virtual
+        run: |
+          ls -l
